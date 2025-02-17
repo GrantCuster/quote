@@ -87,7 +87,7 @@ app.get("*", (_: Request, res: Response) => {
 });
 
 const isDev = process.env.NODE_ENV === "development";
-const PORT = isDev ? backendPort : 8080;
+const PORT = isDev ? backendPort : 5060;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

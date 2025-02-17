@@ -10,7 +10,11 @@ function Index() {
     }
   }, []);
 
-  return loggedIn ? <QuoteMaker /> : <Login />;
+  return (
+    <div className="w-full h-[100dvh] flex items-center justify-center">
+      {loggedIn ? <QuoteMaker /> : <Login />}
+    </div>
+  );
 }
 
 export default Index;

@@ -6,14 +6,6 @@
   color-scheme: dark;
 }
 
-#root {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100dvh;
-}
-
 body {
   font-family: sans-serif;
 }
@@ -23,7 +15,6 @@ body {
   background: #282828;
   color: #ebdbb2;
   font-family: "JetBrains Mono", monospace;
-  font-size: 16px;
 }
 
 input,
@@ -33,8 +24,17 @@ select {
   color: theme("colors.white");
 }
 
+.gruv-bg-hard {
+  background: #1d2021;
+}
+.gruv-bg {
+  background: #282828;
+}
 .gruv-white {
   color: #ebdbb2;
+}
+.gruv-gray {
+  color: #928374;
 }
 .gruv-green {
   color: #98971a;;

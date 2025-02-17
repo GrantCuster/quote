@@ -44,11 +44,13 @@ function Index() {
   );
 
   return (
-    <div key={quote.id} className="w-full max-w-[600px]">
-      <div className="">{quote.quote}</div>
-      <div>&nbsp;</div>
-      <div className="gruv-green">{quote.author}</div>
-      <div className="gruv-blue">{sourceFormatted}</div>
+    <div className="w-full grow flex items-center justify-center">
+      <div className="w-full px-3 max-w-[600px]">
+        <div className="">{quote.quote}</div>
+        <div>&nbsp;</div>
+        <div className="gruv-green">{quote.author}</div>
+        <div className="gruv-blue">{sourceFormatted}</div>
+      </div>
     </div>
   );
 }

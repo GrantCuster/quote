@@ -26,7 +26,8 @@ function Index() {
   }, [quotes]);
 
   const quote = quotes[activeIndex ?? 0];
-  if (!quote) return null;
+
+  if (!quote) return <div className="w-full grow" />;
 
   const sourceFormatted: JSX.Element | string = quote.source.includes(
     "http",
